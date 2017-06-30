@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  team1:
+    image: scapyhunter-team1
+    command: ["/usr/sbin/sshd", "-D"]
+    ports:
+      - "49105:22"
+    networks:
+      scapyhunter:
+        ipv4_address: 10.0.130.5
+  team2:
+    image: scapyhunter-team2
+    command: ["/usr/sbin/sshd", "-D"]
+    ports:
+      - "49106:22"
+    networks:
+      scapyhunter:
+        ipv4_address: 10.0.130.6
+  team3:
+    image: scapyhunter-team3
+    command: ["/usr/sbin/sshd", "-D"]
+    ports:
+      - "49107:22"
+    networks:
+      scapyhunter:
+        ipv4_address: 10.0.130.7
+
+networks:
+  scapyhunter:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.0.130.0/24

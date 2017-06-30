@@ -1,0 +1,8 @@
+FROM scapyhunter-base
+
+# Add team3
+RUN useradd -s /bin/bash -m team3 && echo "team3:BMsRRhm7" | chpasswd
+
+# Expose ssh port and set command
+EXPOSE 22
+CMD ["/usr/sbin/sshd", "-D"]
