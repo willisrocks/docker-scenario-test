@@ -1,0 +1,6 @@
+#!/bin/sh
+
+printf "\n"
+printf " Scenario: ScapyHunt\n\n"
+printf " Description: A series of Network Security puzzles and challenges designed to educate users on packet manipulation and common network attacks.\n\n"
+printf " Instructions: Instructions can be found here https://github.com/JamesSullivan1/scapyHunt/blob/master/HowToPlay.txt. Github here https://github.com/JamesSullivan1/scapyHunt."

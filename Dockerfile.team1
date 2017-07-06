@@ -1,8 +1,0 @@
-FROM scapyhunter-base
-
-# Add team1
-RUN useradd -s /bin/bash -m team1 && echo "team1:8TnsTq7a" | chpasswd
-
-# Expose ssh port and set command
-EXPOSE 22
-CMD ["/usr/sbin/sshd", "-D"]

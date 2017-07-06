@@ -2,26 +2,35 @@ version: '3'
 
 services:
   team1:
-    image: scapyhunter-team1
+    image: scapyhunt
     command: ["/usr/sbin/sshd", "-D"]
     ports:
       - "49105:22"
+    environment:
+      SESSION_USER: 'team1'
+      SESSION_PASSWORD: 'password'
     networks:
       scapyhunter:
         ipv4_address: 10.0.130.5
   team2:
-    image: scapyhunter-team2
+    image: scapyhunt
     command: ["/usr/sbin/sshd", "-D"]
     ports:
       - "49106:22"
+    environment:
+      SESSION_USER: 'team2'
+      SESSION_PASSWORD: 'password'
     networks:
       scapyhunter:
         ipv4_address: 10.0.130.6
   team3:
-    image: scapyhunter-team3
+    image: scapyhunt
     command: ["/usr/sbin/sshd", "-D"]
     ports:
       - "49107:22"
+    environment:
+      SESSION_USER: 'team3'
+      SESSION_PASSWORD: 'password'
     networks:
       scapyhunter:
         ipv4_address: 10.0.130.7
