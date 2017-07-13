@@ -1,6 +1,6 @@
 # Scapy Hunt Scenario Docker Test
 
-A Docker configuration for testing the [scapy hunt security excercises](https://github.com/jfsulliv/scapyHunt)
+A Docker configuration for testing the [scapy hunt security excercises](https://github.com/jfsulliv/scapyHunt).
 
 ## Installing Docker
 This project relies on Docker (Community Edition) to virtualize the excercise. Docker runs natively on Linux, but you can run it on virtualized environments on OS X and Windows.
@@ -18,6 +18,11 @@ This project relies on Docker (Community Edition) to virtualize the excercise. D
 ### Docker on Linux
 
 * There are many mays to install Docker on your distribution of choice in Linux. To install Docker on Ubuntu, you could follow the official Docker [instructions](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository).
+
+#### Docker Compose
+
+Docker Compose is a tool for specifying and running multi-container Docker applications. Compose is installed automatically with Docker for Windows, Docker for Mac, and Docker Toolbox. If running Docker natively on Linux, you will need to [install Compose separately](https://docs.docker.com/compose/install/#alternative-install-options).
+
 
 ## Building and Running the Scenario
 
